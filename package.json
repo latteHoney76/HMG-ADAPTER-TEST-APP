@@ -1,0 +1,12 @@
+{
+  "name": "hmg-adapter-test-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "cd static/main && npm install && npm run build"
+  },
+  "dependencies": {
+    "@forge/api": "^4.0.0",
+    "@forge/resolver": "^1.6.0"
+  }
+}

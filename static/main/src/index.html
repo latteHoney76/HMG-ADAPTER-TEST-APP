@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>HMG Adapter Test</title>
+  <style>
+    body { font-family: -apple-system, "Noto Sans KR", sans-serif; margin: 0; padding: 12px; font-size: 13px; color: #1e293b; }
+    #toolbar { display: flex; gap: 8px; margin-bottom: 8px; align-items: center; }
+    #mode-edit, #mode-preview { padding: 5px 12px; border-radius: 6px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer; font-size: 12px; }
+    #mode-edit.active, #mode-preview.active { background: #2563EB; color: #fff; border-color: #2563EB; }
+    #save-btn { margin-left: auto; padding: 5px 14px; border-radius: 6px; border: none; background: #059669; color: #fff; cursor: pointer; font-size: 12px; }
+    #editor { width: 100%; height: 420px; box-sizing: border-box; font-family: monospace; font-size: 12px; padding: 8px; border: 1px solid #e2e8f0; border-radius: 6px; }
+    #preview-frame { width: 100%; height: 480px; border: 1px solid #e2e8f0; border-radius: 6px; }
+    #status { font-size: 11px; color: #94a3b8; margin-top: 4px; }
+    #log { margin-top: 8px; max-height: 140px; overflow-y: auto; background: #0f172a; color: #a3e635; font-family: monospace; font-size: 11px; padding: 8px; border-radius: 6px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <div id="toolbar">
+    <button id="mode-edit" class="active">HTML 편집</button>
+    <button id="mode-preview">미리보기 (Adapter 테스트)</button>
+    <button id="save-btn">저장</button>
+  </div>
+  <textarea id="editor" placeholder="테스트할 HTML/CSS/JS 원문을 여기에 붙여넣으세요"></textarea>
+  <iframe id="preview-frame" sandbox="allow-scripts allow-forms allow-popups allow-same-origin" style="display:none"></iframe>
+  <div id="status"></div>
+  <div id="log"></div>
+</body>
+</html>
