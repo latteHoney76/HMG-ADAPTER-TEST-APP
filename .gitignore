@@ -3,3 +3,4 @@ static/main/build/
 .DS_Store
 .env
 .env.local
+.claude/
