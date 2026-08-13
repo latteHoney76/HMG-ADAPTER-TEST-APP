@@ -1,22 +1,20 @@
 # 다른 컴퓨터(홈 Mac)에서 이어서 작업하기
 
-이 프로젝트는 2026-08-13에 이 저장소로 git 관리를 시작했습니다. 아래 순서대로
-하면 홈 Mac에서 동일한 상태로 이어서 작업할 수 있습니다.
+이 프로젝트는 2026-08-13에 GitHub 저장소
+(`https://github.com/latteHoney76/HMG-ADAPTER-TEST-APP`)로 git 관리를
+시작했습니다. 아래 순서대로 하면 홈 Mac에서 동일한 상태로 이어서 작업할
+수 있습니다.
 
 ## 1. 이 저장소를 홈 Mac으로 가져오기
 
-원격 저장소(GitHub 등)를 만들어서 push해두는 걸 권장합니다.
+git이 처음이시라면 **[GIT-GUIDE.md](GIT-GUIDE.md)**를 먼저 보세요 —
+SSH 키 생성부터 clone까지 화면에 뭐가 뜨는지 포함해서 자세히 정리했습니다.
+아래는 요약입니다.
 
 ```bash
-# (지금 이 컴퓨터에서, 원격 저장소를 만든 뒤)
-git remote add origin <your-repo-url>
-git push -u origin main
-```
-
-```bash
-# (홈 Mac에서)
-git clone <your-repo-url>
-cd hmg-adapter-test-app
+# (집 Mac에서, SSH 키를 만들어 GitHub에 등록한 뒤 — 자세한 건 GIT-GUIDE.md)
+git clone git@github.com:latteHoney76/HMG-ADAPTER-TEST-APP.git
+cd HMG-ADAPTER-TEST-APP
 ```
 
 원격 저장소를 아직 안 만드셨다면, GitHub 등에서 새 **private** 저장소를 만든
